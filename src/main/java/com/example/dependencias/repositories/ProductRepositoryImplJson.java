@@ -29,7 +29,7 @@ public class ProductRepositoryImplJson implements  ProductRepository
 
             list =
                     Arrays.asList(objectMapper.readValue(
-                            resource.getInputStream(),Product.class));
+                            resource.getInputStream(),Product[].class));
         }catch (IOException e)
         {
             e.printStackTrace();
